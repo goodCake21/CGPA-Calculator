@@ -1,0 +1,679 @@
+/* Universal box-sizing for all elements */
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Info Section Container */
+#info {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #34495e;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: #2c3e50;
+}
+
+/* Math Formulas */
+p > strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #3498db;
+}
+
+/* News Articles */
+.news-articles {
+  margin-top: 30px;
+}
+
+.news-articles ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-articles li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.news-articles li:hover {
+  background-color: #d5dbdb;
+}
+
+.news-articles a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.news-articles a:hover {
+  color: #1c5980;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#info {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #info {
+      padding: 15px;
+      margin: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+/* Change the color of the NAV bar links */
+.nav-link {
+  color: #ff5733; /* Change this to your desired color */
+}
+
+/* Change the color of the dropdown items */
+.dropdown-item {
+  color: #ff5733; /* Change this to your desired color */
+}
+
+/* Change the color of the icons */
+.nav-link i {
+  color: #ff5733; /* Change this to your desired color */
+}
+
+
+/* Navbar basic styling */
+.navbar {
+  background-color: #1c59dd;
+  color: #13eebf;
+  padding: 20px 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar links styling */
+.navbar .navbar-nav .nav-link {
+  color: #3697e7;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #f0ad4e;
+}
+
+/* Navbar toggler (hamburger icon) */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.navbar-toggler-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.img-fluid {
+  width: 122%;
+  max-width: 200%;
+  height: 127%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+/* General Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduced padding for a compact look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand img {
+  height: 35px; /* Fixed logo height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9rem; /* Smaller font size */
+  padding: 0.5rem 1rem; /* Reduced padding */
+  color: #2c3e50; /* Dark text color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1abc9c; /* Hover color */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dropdown-item {
+  font-size: 0.9rem; /* Smaller font size */
+  padding: 0.5rem 1rem; /* Reduced padding */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Light hover background */
+}
+
+/* Buttons */
+.btn-outline-primary {
+  border-color: #1abc9c; /* Primary color */
+  color: #1abc9c; /* Primary color */
+}
+
+.btn-outline-primary:hover {
+  background-color: #1abc9c; /* Primary color */
+  color: #fff; /* White text on hover */
+}
+
+.btn-primary {
+  background-color: #1abc9c; /* Primary color */
+  border-color: #1abc9c; /* Primary color */
+}
+
+.btn-primary:hover {
+  background-color: #16a085; /* Darker primary color on hover */
+  border-color: #16a085; /* Darker primary color on hover */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      font-size: 1rem; /* Slightly larger font size for mobile */
+      padding: 10px 0; /* Increased padding for touch-friendly links */
+  }
+
+  .navbar-collapse {
+      background-color: #38bcfa; /* White background for mobile menu */
+      border-top: 1px solid #eee; /* Subtle border for separation */
+      padding-top: 10px;
+  }
+
+  .btn-outline-primary, .btn-primary {
+      width: 100%; /* Full-width buttons on mobile */
+      margin: 5px 0; /* Spacing between buttons */
+  }
+}
+
+/* Highlighted navbar items */
+.nav-item.highlight .nav-link {
+  color: #0062cc;
+  font-weight: bold;
+}
+
+.nav-item.highlight .nav-link:hover {
+  color: #004085;
+}
+
+/* Icon styling for topnav links */
+.topnav .nav-link i {
+  color: SeaGreen;
+  margin-right: 8px;
+}
+
+.topnav .nav-link i:hover {
+  color: #0062cc;
+}
+
+/* Dropdown toggle arrow */
+.navbar-nav .dropdown-toggle::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+/* Active state for navbar links */
+.topnav .navbar-nav .nav-item.active .nav-link {
+  color: #0062cc;
+  font-weight: bold;
+}
+
+.contain{
+  background-color: #3b88fc; /* Dark blue background */
+  padding: 10px 20px;
+  border-bottom: 2px solid #2a74be; /* Slightly darker border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav Bar Styling */
+.nav-bar {
+  background-color: #278ef5; /* Dark blue background */
+  padding: 10px 20px;
+  border-bottom: 2px solid #296fb4; /* Slightly darker border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px; /* Space between buttons */
+}
+
+.tab {
+  background-color: transparent;
+  border: none;
+  color: #16df81; /* Light gray text */
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.tab:hover {
+  background-color: #34495e; /* Slightly darker background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+.tab.active {
+  background-color: #1abc9c; /* Teal background for active tab */
+  color: #ffffff; /* White text for active tab */
+}
+
+.tab i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-bar-label {
+  font-weight: 500; /* Slightly bold text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tabs {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      gap: 10px;
+  }
+
+  .tab {
+      width: 100%; /* Full width buttons on small screens */
+      justify-content: center;
+  }
+}
+
+/* Modal Styles */
+.modal-header {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.modal-header .btn-close {
+  color: #ffffff;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body .form-label {
+  font-weight: 500;
+}
+
+.modal-body .form-control {
+  margin-bottom: 15px;
+}
+
+.modal-body .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.modal-body .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Calculator styles */
+.calculator {
+  width: 70vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cgpaInput-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cgpaInput {
+  width: 48%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.calculator-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.calculator-table th,
+.calculator-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.calculator-table th {
+  background-color: #f8f9fa;
+}
+
+.addSubject-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.addSubject-btn:hover {
+  background-color: #0056b3;
+}
+
+.removeSubject-btn {
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.removeSubject-btn:hover {
+  color: #c82333;
+}
+
+
+
+/* General Styles */
+.container-2 {
+  max-width: 100%;
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.jumbotron {
+  background-color: #e9f7ff; /* Light blue background */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.jumbotron-fluid {
+  padding: 0;
+}
+
+.bg-lightblue {
+  background-color: #e9f7ff;
+}
+
+.secondfont {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark blue text */
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+/* Text Content */
+.align-self-center {
+  align-self: center;
+}
+
+/* Image Content */
+.col-md-6.pr-0 {
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .secondfont {
+      font-size: 2rem;
+  }
+
+  .header-image {
+      height: 200px;
+  }
+
+  .col-md-6 {
+      padding: 0 15px;
+  }
+}
+
+/* General Styles for the Section */
+.row {
+  display: block; /* Ensure row is not flex */
+  margin: 0;
+  padding: 0;
+}
+
+/* Text Content Styling */
+.col-md-6 {
+  padding: 20px;
+  height: 15%;
+  width: 100%;
+}
+
+.secondfont {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark blue text */
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-top: 13px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+/* Image Content Styling */
+.col-md-6.pr-0 {
+  width: 80%;
+  height: 200px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-left: 18px;
+  border-radius: 10px;
+  background-color: #3e8e41;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .secondfont {
+      font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .col-md-6 {
+      padding: 10px; /* Reduced padding for smaller screens */
+      width: 100%;
+  }
+
+  .header-image {
+      margin-top: 20px; /* Add space between text and image on smaller screens */
+  }
+}
+
+/* Basic styling for dropdowns */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.add-course-btn, .getAdviceBtn{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Styling for the display area */
+#selection-display {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tab Content Styling */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

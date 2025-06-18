@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Undergraduate">
+    <meta name="description" content="CALEB UPDATE | CALEB GP Calculator, CALEB CGP Calculator, CALEB CGPA Calculator">
+    <meta property="og:title" content="CALEB CGPA Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://calebuniversity.edu.ng/cgpa-calculator">
+    <meta property="og:image" content="https://i.postimg.cc/SsL4kXGx/cgpa-calculator.jpg">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://calebuniversity.edu.ng/cgpa-calculator">
+    <link rel="next" href="https://calebuniversity.edu.ng/page/2/">
+    <link rel="pingback" href="https://calebuniversity.edu.ng">
+    <link rel="alternate" hreflang="en" href="https://calebuniversity.edu.ng/cgpa-calculator">
+    <title>CALEB CGPA Calculator</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="caleb logo.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="caleb logo.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="caleb logo.jpg">
+    <link rel="manifest" href="./b-blog/assets/img/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <!-- JavaScript -->
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!--------------------------------------
+    NAVBAR
+    --------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="https://www.calebuniversity.edu.ng/">
+                <img class="logo" id="caleb-logo" src="caleb logo 2.jpg" alt="Caleb University Logo" width="35">
+            </a>
+    
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <!-- Dropdown Menu for Features -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-toolbox text-success"></i> Features
+                        </a>
+                        <!-- Dropdown Items -->
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="gp-calculator">GP Calculator</a></li>
+                            <li><a class="dropdown-item" href="turnitin">Plagiarism Checker</a></li>
+                            <li><a class="dropdown-item" href="personalized-timetable">Personalized Timetable</a></li>
+                            <li><a class="dropdown-item" href="https://selar.co/m/NOUNUPDATE">Summary (CE&CS)</a></li>
+                            <li><a class="dropdown-item" href="https://selar.co/m/NOUNUPDATE">Solved Past Questions</a></li>
+                            <li><a class="dropdown-item" href="#">Project/Seminar</a></li>
+                            <li><a class="dropdown-item" href="gst302">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="#">Apps</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- Other Links -->
+                    <li class="nav-item"><a class="nav-link" href="past-questions"><i class="fa-solid fa-scroll text-success"></i> Past Questions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course-materials"><i class="fa-solid fa-book text-success"></i> Course Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tma-archive"><i class="fa-solid fa-folder-open text-success"></i> TMA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mock"><i class="fa-solid fa-pen-clip text-success"></i> Exam Practice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crib"><i class="fa-solid fa-group text-success"></i> Crib</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fee-check"><i class="fa-solid fa-calculator text-success"></i> Fee Check</a></li>
+                </ul>
+    
+                <!-- Sign Up and Login Buttons -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-2" href="#" id="open-signup-btn">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#" id="open-login-btn">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="signupUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="loginUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------
+    HEADER
+    --------------------------------------->
+    <div class="container-2">
+        <div class="jumbotron jumbotron-fluid mb-3 pt-0 pb-0 bg-lightblue position-relative">
+            <div class="pl-4 pr-0 h-100 tofront">
+                <div class="row justify-content-between align-items-center">
+                     <!-- Image Content -->
+                     <div class="col-md-6 pr-0">
+                        <img src="download.jpg" alt="CALEB CGPA Calculator" class="img-fluid header-image">
+                    </div>
+
+
+                    <!-- Text Content -->
+                    <div class="col-md-6 pt-6 pb-6 align-self-center">
+                        <h1 class="secondfont mb-3 font-weight-bold">CALEB CGPA Calculator</h1>
+                        <p class="mb-3">
+                            The CALEB CGPA Calculator is a valuable tool for every CALEB student seeking to monitor their academic performance accurately. Understanding how to calculate your CGPA manually is crucial, but utilizing the CGPA calculator streamlines the process and provides you with instant results. Make the most of this convenient tool to track your progress, set goals, and stay motivated on your journey toward academic success at the CALEB UNIVERSITY, IMOTA, IKORODU.
+                        </p>
+                    </div>
+    
+           </div>
+            </div>
+        </div>
+    </div><!-- End Header -->
+
+    <!--------------------------------------
+    MAIN
+    --------------------------------------->
+    <div>
+       <!-- Nav Bar -->
+    <div class="nav-bar">
+        <div class="tabs">
+            <button data-tab-target="#calculator" class="tab home active">
+                <i class="fas fa-calculator"></i> CGPA CALCULATOR
+            </button>
+            <button data-tab-target="#settings" class="tab">
+                <i class="fas fa-cog"></i>
+                <div class="nav-bar-label">&nbsp;Settings</div>
+            </button>
+            <button data-tab-target="#info" class="tab">
+                <i class="fas fa-info-circle"></i>
+                <div class="nav-bar-label">&nbsp;Info</div>
+            </button>
+        </div>
+    </div>
+
+    <div class="contain">
+        <!-- Dropdown for Levels -->
+        <div class="dropdown">
+            <button class="dropbtn">Select Level</button>
+            <div class="dropdown-content">
+                <a href="#" data-level="100">100 Level</a>
+                <a href="#" data-level="200">200 Level</a>
+                <a href="#" data-level="300">300 Level</a>
+                <a href="#" data-level="400">400 Level</a>
+            </div>
+        </div>
+
+        
+        <!-- Dropdown for Semesters -->
+        <div class="dropdown">
+            <button class="dropbtn">Select Semester</button>
+            <div class="dropdown-content">
+                <a href="#" data-semester="1">1st Semester</a>
+                <a href="#" data-semester="2">2nd Semester</a>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Display selected level and semester -->
+    <div id="selection-display">
+        Selected Level: <span id="selected-level">None</span>, 
+        Selected Semester: <span id="selected-semester">None</span>
+    </div> 
+
+        <div id="settings" class="tab-content">
+            <p>Settings Content</p>
+        </div>
+        
+
+        <!-- Tab Content -->
+<div id="calculator" class="tab-content active">
+    <p>CGPA Calculator Content</p>
+    <div class="calculator">
+        <form>
+            <div class="cgpaInput-box">
+                <div class="cgpaInput">
+                    Current CGPA: <input type="number" class="currentCGPA" placeholder="E.g. 3.12" step="0.25">
+                </div>
+                <div class="cgpaInput">
+                    Credits Completed: <input type="number" class="creditsCompleted" placeholder="E.g. 45" step="1">
+                </div>
+                <div class="cgpaInput">
+                    Target CGPA: <input type="number" class="targetCGPA" placeholder="E.g. 3.50" step="0.25">
+                </div>
+                <div class="cgpaInput">
+                    Additional Credits: <input type="number" class="additionalCredits" placeholder="E.g. 15" step="1">
+                </div>
+            </div>
+
+            <table class="calculator-table">
+                <thead>
+                    <tr>
+                        <th>COURSE CODE</th>
+                        <th>CREDIT<span style="color:red">*</span></th>
+                        <th>GRADE<span style="color:red">*</span></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Eg. GST413"></td>
+                        <td>
+                            <select class="credit" onchange="calculator()">
+                                <option disabled="true" selected="true" value="--">--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="grade" onchange="calculator()">
+                                <option disabled="true" selected="true" value="--">--</option>
+                                <option value="5">A</option>
+                                <option value="4">B</option>
+                                <option value="3">C</option>
+                                <option value="2">D</option>
+                                <option value3="1">E</option>
+                                <option value="0">F</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button type="button" class="remove-btn" onclick="removeRow(this)">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="add-course-btn" onclick="addCourseRow()">Add Course</button>
+            <div class="result">
+                <h3>Result:</h3>
+                <p>Your CGPA: <span id="cgpa-result">0.00</span></p>
+            </div>
+            <button type="button" class="getAdviceBtn" id="getAdviceBtn">Get Advice</button>
+            <p id="cgpaAdvice"></p>
+        </form>
+    </div>
+</div>
+
+            <!-- Info Section -->
+            <div id="info" data-tab-content class="tab-content">
+                <div class="info">
+                    <p>Info Content</p>
+                    <h2>What is CGPA and GPA?</h2>
+                    <p>
+                        <strong>GPA (Grade Point Average)</strong> is the average of the grades obtained by a student in a single semester or term. It is calculated by dividing the total grade points earned by the total credit hours attempted.
+                    </p>
+                    <p>
+                        <strong>CGPA (Cumulative Grade Point Average)</strong> is the average of all GPAs earned by a student across all semesters or terms. It reflects the overall academic performance of a student throughout their program.
+                    </p>
+
+                    <h2>How to Calculate GPA and CGPA</h2>
+                    <p>
+                        <strong>GPA Calculation:</strong>
+                        \[
+                        \text{GPA} = \frac{\text{Total Grade Points}}{\text{Total Credit Hours}}
+                        \]
+                        For example, if a student earns 45 grade points in 15 credit hours, their GPA is:
+                        \[
+                        \text{GPA} = \frac{45}{15} = 3.0
+                        \]
+                    </p>
+                    <p>
+                        <strong>CGPA Calculation:</strong>
+                        \[
+                        \text{CGPA} = \frac{\text{Sum of (GPA × Credit Hours) for All Semesters}}{\text{Total Credit Hours Across All Semesters}}
+                        \]
+                        For example, if a student has a GPA of 3.5 in Semester 1 (15 credits) and 4.0 in Semester 2 (18 credits), their CGPA is:
+                        \[
+                        \text{CGPA} = \frac{(3.5 \times 15) + (4.0 \times 18)}{15 + 18} = \frac{52.5 + 72}{33} = 3.77
+                        \]
+                    </p>
+
+                    <h2>How CGPA and GPA Help Students</h2>
+                    <p>
+                        - <strong>Academic Progress Tracking:</strong> CGPA and GPA help students monitor their academic performance over time.
+                        - <strong>Scholarship Eligibility:</strong> Many scholarships require a minimum CGPA or GPA.
+                        - <strong>Graduation Requirements:</strong> Universities often set a minimum CGPA for graduation.
+                        - <strong>Career Opportunities:</strong> Employers and graduate schools often consider CGPA as a measure of a student's dedication and ability.
+                    </p>
+
+                    <h2>News About Caleb University</h2>
+                    <div class="news-articles">
+                        <h3>Latest News</h3>
+                        <ul>
+                            <li>
+                                <a href="https://calebuniversity.edu.ng/news/caleb-university-hosts-2024-education-summit" target="_blank">
+                                    Caleb University Hosts 2024 Education Summit
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://calebuniversity.edu.ng/news/new-research-center-opens-at-caleb-university" target="_blank">
+                                    New Research Center Opens at Caleb University
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://calebuniversity.edu.ng/news/caleb-university-ranked-among-top-10-nigerian-universities" target="_blank">
+                                    Caleb University Ranked Among Top 10 Nigerian Universities
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://calebuniversity.edu.ng/news/students-win-national-debate-competition" target="_blank">
+                                    Caleb University Students Win National Debate Competition
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Calculator Functionality -->
+    <script>
+        function addCourseRow() {
+            const tableBody = document.querySelector('.calculator-table tbody');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" placeholder="Eg. GST413"></td>
+                <td>
+                    <select class="credit" onchange="calculator()">
+                        <option disabled="true" selected="true" value="--">--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="grade" onchange="calculator()">
+                        <option disabled="true" selected="true" value="--">--</option>
+                        <option value="5">A</option>
+                        <option value="4">B</option>
+                        <option value="3">C</option>
+                        <option value="2">D</option>
+                        <option value="1">E</option>
+                        <option value="0">F</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" class="remove-btn" onclick="removeRow(this)">Remove</button>
+                </td>
+            `;
+            tableBody.appendChild(newRow);
+        }
+
+        function removeRow(button) {
+            const row = button.closest('tr');
+            row.remove();
+            calculator();
+        }
+
+        function calculator() {
+            const currentCGPA = parseFloat(document.querySelector('.currentCGPA').value) || 0;
+            const creditsCompleted = parseFloat(document.querySelector('.creditsCompleted').value) || 0;
+
+            const rows = document.querySelectorAll('.calculator-table tbody tr');
+            let totalCredits = 0;
+            let totalGradePoints = 0;
+
+            rows.forEach(row => {
+                const credit = parseFloat(row.querySelector('.credit').value) || 0;
+                const grade = parseFloat(row.querySelector('.grade').value) || 0;
+
+                if (!isNaN(credit) && !isNaN(grade)) {
+                    totalCredits += credit;
+                    totalGradePoints += credit * grade;
+                }
+            });
+
+            const totalCumulativeCredits = creditsCompleted + totalCredits;
+            const totalCumulativeGradePoints = (currentCGPA * creditsCompleted) + totalGradePoints;
+            const newCGPA = totalCumulativeGradePoints / totalCumulativeCredits;
+
+            document.getElementById('cgpa-result').textContent = newCGPA.toFixed(2);
+        }
+    </script>
+    <script>
+    // Function to handle level selection
+    document.querySelectorAll('.dropdown-content a[data-level]').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            const selectedLevel = item.getAttribute('data-level');
+            console.log('Selected Level: ${selectedLevel}');
+            // You can add more logic here, like updating the UI or making an API call
+        });
+    });
+
+    // Function to handle semester selection
+    document.querySelectorAll('.dropdown-content a[data-semester]').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            const selectedSemester = item.getAttribute('data-semester');
+            console.log('Selected Semester: ${selectedSemester}');
+            // You can add more logic here, like updating the UI or making an API call
+        });
+    });
+
+</script>
+<!-- Bootstrap JS (with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
