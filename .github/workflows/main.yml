@@ -22,15 +22,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
+      - name: Fix project-site asset paths
+        run: sed -i 's|href="/images/|href="./images/|g' index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-      
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
